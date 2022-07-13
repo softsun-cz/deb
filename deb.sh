@@ -7,3 +7,4 @@ apt-get -y install ssh mc net-tools
 sed -i -e 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 service ssh restart
 echo "alias ls='ls -la --color=auto'" >> /root/.bashrc
+reboot
