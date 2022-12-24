@@ -6,5 +6,5 @@ apt-get update && apt-get upgrade
 apt-get -y install ssh mc net-tools bc
 sed -i -e 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 service ssh restart
-echo "alias ls='ls -la --color=auto'" >> /root/.bashrc
+echo "alias ls='ls -la --color=auto --group-directories-first'" >> /root/.bashrc
 reboot
